@@ -42,6 +42,8 @@ class PleskManager:
       response['priority'] = spaced[2]
       response['port'] = spaced[4]
       response['text'] = spaced[5]
+    else:
+      return None
     return response
 
   def get_domains(self):

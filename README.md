@@ -9,6 +9,13 @@ To install required packages:
 
 ```pip3 install -r requirements.txt```
 
+Create an ```.env``` file with the following:
+
+```
+DO_API_KEY=<DIGITALOCEAN_API_KEY>
+DO_TTL=<DNS_TTL_IN_SECONDS>
+```
+
 To synchronize records
 
 ```python3 doplesk_dns_sync/main.py [-h] [-d DOMAIN] command```
